@@ -1,0 +1,29 @@
+
+insert into authors(name)
+value ("Jane Austen"),("Emily Dickinson"),("Fyodor Dostoevsky"),("William Shakespeare"),("Lau Tzu")
+
+insert into books (title)
+value ("C Sharp"),("Java"), ("Phthon"), ("PHP"), ("Ruby")
+
+update books set title = 'C#' where id = 1
+
+update authors set name = 'Bill' where id = 4
+
+insert into favorites (author_id, book_id)
+value (1,1), (1,2), (2,3), (3,4), (4,1), (4,2), (4,3), (4,4), (4,5)
+
+select * from favorites where book_id = 3
+
+delete from favorites 
+where book_id = 3 
+and author_id = 2;
+
+insert into favorites (author_id, book_id)
+value (5,2)
+
+select * from favorites 
+where book_id = 5
+
+select * from favorites 
+where author_id = 3
+
